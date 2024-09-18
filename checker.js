@@ -5,7 +5,7 @@ const input = document.getElementById("input")
 //takes string and splits it into array letter by letter
 //reverses array
 //joins letters back together
-function reversestring(str) {
+function reverseString(str) {
     return str.split("").reverse().join("")
     
 }
@@ -16,7 +16,7 @@ function reversestring(str) {
 //.toLowerCase function to fix capitalisation problem
 function check() {
     const value = input.value.toLowerCase();
-    const reverse = reversestring(value)
+    const reverse = reverseString(value)
     
     if (value == reverse) {
         alert("Palindrome")
